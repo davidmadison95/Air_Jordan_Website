@@ -66,8 +66,13 @@ nav ul li a {
     line-height: 1.7;
 }
 
-/* Homepage image and video styles */
-.homepage-image, video {
+/* Centered heading style */
+.centered-heading {
+    text-align: center;
+}
+
+/* Homepage image styles */
+.homepage-image {
     width: 550px;
     height: 385px;
     object-fit: cover;
@@ -76,29 +81,6 @@ nav ul li a {
     background-color: #f0f0f0;
     padding: 5px;
     box-sizing: border-box;
-}
-
-/* Center video container */
-.video-container {
-    text-align: center;
-}
-
-/* Audio styles */
-audio {
-    display: block;
-    margin: 25px auto;
-    width: 550px;
-}
-
-/* To ensure responsiveness on smaller screens */
-@media (max-width: 650px) {
-    .homepage-image, video, audio {
-        width: 100%;
-        height: auto;
-    }
-    video {
-        aspect-ratio: 16 / 9;
-    }
 }
 
 /* Text styles */
@@ -230,64 +212,10 @@ input[type="reset"]:hover {
     background-color: #555;
 }
 
-/* Container for both boxes */
-.top-right-boxes {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Date and Time Button */
-.datetime-container {
-    margin-bottom: 10px;
-}
-
-.datetime-container button {
-    background-color: rgba(220, 53, 69, 0.7);
-    border: none;
-    color: white;
-    padding: 8px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    width: 150px;
-}
-
-.datetime-container button:hover {
-    background-color: rgba(220, 53, 69, 1);
-}
-
-#dateTime {
-    font-size: 14px;
-    margin-top: 5px;
-    color: #333;
-    text-align: center;
-}
-
-/* Secret Message Box */
-#secretBox {
-    width: 150px;
-    height: 25px;
-    padding: 5px;
-    background-color: rgba(220, 53, 69, 0.7);
-    color: white;
-    text-align: center;
-    line-height: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    font-size: 12px;
-    border-radius: 4px;
-}
-
-#secretBox:hover {
-    background-color: rgba(220, 53, 69, 1);
+/* Responsive design */
+@media (max-width: 650px) {
+    .homepage-image {
+        width: 100%;
+        height: auto;
+    }
 }
